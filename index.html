@@ -49,7 +49,7 @@
         <li>partial matches, where the password is a slight modification of the login (e.g., addition or alteration of a single character).</li>
       </ul>
 
-      <p>For comparability, the results were normalized and also expressed in per mille (‰) of the total number of passwords.</p>
+      <p>For comparability, the results were normalized and also expressed in per mille (&permil;) of the total number of passwords.</p>
     </section>
 
     <section>
@@ -62,7 +62,36 @@
         <li>approximately 50,000 for accounts on the non-email website.</li>
       </ul>
       <p>In terms of frequency, this pattern exceeds even the most common dictionary passwords occupying the top positions in password distributions.</p>
+      
+        <table class="grid">
+          <thead>
+            <tr>
+              <th colspan="3">Email passwords</th>
+              <th colspan="3">Website passwords</th>
+            </tr>
+            <tr>
+              <th>Item</th><th>Count</th><th>&permil;</th>
+              <th>Item</th><th>Count</th><th>&permil;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Password equals login</td><td>86908</td><td>14.3</td>
+              <td>Password equals login</td><td>49327</td><td>14.0</td>
+            </tr>
+            <tr>
+              <td>Top-1 "123456"</td><td>82830</td><td>13.6</td>
+              <td>Top-1 "qwerty"</td><td>33322</td><td>9.5</td>
+            </tr>
+            <tr>
+              <td>Top-2 "qwerty"</td><td>53144</td><td>8.7</td>
+              <td>Top-2 "123456"</td><td>21775</td><td>6.2</td>
+            </tr>
+          </tbody>
+        </table>
 
+      
+      
       <h3>3.2. Partial Match</h3>
       <p>Passwords that represent slight modifications of the login occur less frequently than exact matches; however, their practical relevance is compensated by the low computational complexity of such attacks. By frequency, these passwords consistently fall within the top 50 most common values for both email services and non-email websites.</p>
     </section>

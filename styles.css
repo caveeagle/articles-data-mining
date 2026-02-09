@@ -47,3 +47,18 @@ code,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead th {
+  border-bottom: 2px solid #000;
+}
+
+th, td {
+  border: 1px solid #666;
+  padding: 6px 10px;
+  text-align: left;
+}
