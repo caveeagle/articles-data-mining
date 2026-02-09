@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Black Archaeology of Data Mining: A Comparative Analysis of Credential-Based Attack Effectiveness</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <article>
+    <header>
+      <h1>Black Archaeology of Data Mining: A Comparative Analysis of Credential-Based Attack Effectiveness</h1>
+      <p class="meta">
+        <strong>Keywords:</strong> Big Data, Data Mining, Information Security, Passwords, Authentication.
+      </p>
+    </header>
+    
+    <img src='picture_1.png'>
+    
+    <section class="abstract" aria-label="Abstract">
+      <p><strong>Abstract.</strong> This paper examines the effectiveness of attacks on user accounts based on using the login as the password or its slight modifications. An analysis of large-scale real-world password datasets shows that the strategy “login = password” occurs more frequently than the most common dictionary passwords. The results indicate that this class of attacks is systematically underestimated in existing security mechanisms.</p>
+    </section>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>Dictionary attacks are traditionally considered one of the most effective and widespread methods for compromising user accounts. In practice, however, user behavior in password selection often follows even simpler and more predictable patterns. The aim of this study is to quantitatively assess the prevalence of passwords that are identical to user logins or represent their minimal modification, and to compare their significance with classical dictionary-based attacks.</p>
+    </section>
+
+    <section>
+      <h2>2. Data and Methodology</h2>
+      <p>Two independent datasets were used in this study:</p>
+      <ol>
+        <li>A dataset of approximately 6 million passwords from email accounts.</li>
+        <li>A dataset of 3.5 million passwords from a non-email website, containing recent records (May 2015) and characterized by a relatively low proportion of invalid passwords.</li>
+      </ol>
+
+      <p>Statistical analysis was performed separately for each dataset. The following categories were examined:</p>
+      <ul>
+        <li>exact matches between password and login;</li>
+        <li>partial matches, where the password is a slight modification of the login (e.g., addition or alteration of a single character).</li>
+      </ul>
+
+      <p>For comparability, the results were normalized and also expressed in per mille (‰) of the total number of passwords.</p>
+    </section>
+
+    <section>
+      <h2>3. Results</h2>
+
+      <h3>3.1. Exact Match Between Password and Login</h3>
+      <p>The number of records in which the password exactly matched the login was:</p>
+      <ul>
+        <li>approximately 87,000 for email accounts;</li>
+        <li>approximately 50,000 for accounts on the non-email website.</li>
+      </ul>
+      <p>In terms of frequency, this pattern exceeds even the most common dictionary passwords occupying the top positions in password distributions.</p>
+
+      <h3>3.2. Partial Match</h3>
+      <p>Passwords that represent slight modifications of the login occur less frequently than exact matches; however, their practical relevance is compensated by the low computational complexity of such attacks. By frequency, these passwords consistently fall within the top 50 most common values for both email services and non-email websites.</p>
+    </section>
+
+    <section>
+      <h2>4. Discussion</h2>
+      <p>Many modern email services prohibit the use of passwords identical to the login. Such restrictions, however, are rarely enforced on regular websites and forums. In practice, systems that forbid passwords differing from the login by only a single character are almost nonexistent. Such validation mechanisms remain the exception rather than the rule.</p>
+
+      <p>Although the overall complexity of classical dictionary attacks is somewhat lower, attacks based on login modification demonstrate high effectiveness while requiring only a limited number of attempts. A significant issue is that this class of attacks is often not considered in security monitoring and protection systems, even on large internet portals.</p>
+    </section>
+
+    <section>
+      <h2>5. Conclusion</h2>
+      <p>The study demonstrates that using the login as the password or applying minimal modifications to it constitutes a widespread and underestimated vulnerability. From a practical standpoint, incorporating awareness of such patterns into authentication design and security policies can substantially improve system resilience against brute-force and guessing attacks.</p>
+    </section>
+  </article>
+</body>
+</html>
