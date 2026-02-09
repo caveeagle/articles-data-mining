@@ -62,3 +62,7 @@ th, td {
   padding: 6px 10px;
   text-align: left;
 }
+
+th.center {
+  text-align: center;
+}
